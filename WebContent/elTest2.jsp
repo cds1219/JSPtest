@@ -7,14 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${ "10"+"21" }<br>
-	${ param.name }<br>
-	위<br>
-	${ name }<br>
-	<%
-		request.setAttribute("address", "대한민국");
-	%>
-	<jsp:forward page="elTest2.jsp"></jsp:forward>
-	아래
+	^^
+	${requestScope.address }
+	<%-- ${address } 모든 Scope에서 찾음--%>
 </body>
 </html>
